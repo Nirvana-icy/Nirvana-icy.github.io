@@ -1,55 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">Home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Nirvana.icy<br />
-                Live in Beijing
-              </p>
-            </div>
-            <div class="contact">
-                <p>
-                <a href="http://weibo.com/waitbefore/home">@Weibo</a><br />
-                <a href="mailto:jinglong.bi@icloud.com?subject=Mail from Nirvana_icy's blog">Mail to me.</a>
-                </p>
-            </div>
-            <div class="contact">
-                <p>
-                <a href="https://github.com/Nirvana-icy">@Github.com</a><br />
-                <a href="http://instagram.com/nirvana_icy">@Instagram</a>
-                </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="http://breadtrip.com/u/2387615418/">@Breadtrip</a><br />
-                <a href="http://www.douban.com/people/waitBefore/">@Douban</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
-</html>
+---
+theme :
+  name : twitter
+---
+{% include JB/setup %}
+{% include themes/twitter/default.html %}
