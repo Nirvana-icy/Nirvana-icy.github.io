@@ -1,7 +1,7 @@
 ##UIWebView自适应宽度 
 2014年4月10日 上午11:51
 
-```
+{% highlight ruby %}
 #pragma mark - UIWebViewDelegate Methods
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
@@ -55,4 +55,4 @@
     [str replaceOccurrencesOfString:@"</head>" withString:stringForReplace options:NSLiteralSearch range:range];
     return str;
 }
-```
+{% endhighlight %}

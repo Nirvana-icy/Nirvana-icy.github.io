@@ -1,6 +1,6 @@
-	
-	
+
 	static const char *CategoryColors =
+
 	"208,138,138;"
 	"217,183,141;"
 	"228,230,144;"
@@ -17,11 +17,13 @@
 	"208,139,182;"
 	"208,138,140";
 
+{% highlight ruby %}
 	@implementation DADataEnvironment
 
 	SINGLETON_GCD(DADataEnvironment)
 
-	+ (UIColor *)colorWithCategoryIndex:(NSUInteger)index{
+	+ (UIColor *)colorWithCategoryIndex:(NSUInteger)index
+    {
     	NSString *colorString = [[NSString alloc] initWithBytes:CategoryColors length:strlen(CategoryColors) encoding:NSUTF8StringEncoding];
     
     	NSArray *array = [colorString componentsSeparatedByString:@";"];
@@ -30,4 +32,4 @@
     	NSArray *color = [string componentsSeparatedByString:@","];
     	return RGBCOLOR([color[0] integerValue], [color[1] integerValue], [color[2] integerValue]);
 	}
-	
+{% endhighlight %}
